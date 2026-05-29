@@ -1,0 +1,6 @@
+__pycache__/
+.env/
+.vscode/
+instance/
+Super_Secrets/
+idk.txt
