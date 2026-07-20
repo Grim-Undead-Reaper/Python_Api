@@ -1,4 +1,5 @@
 from flask import Blueprint
+from Constantes import AllRoutes
 
 apibp = Blueprint("apiBlueprint", __name__, url_prefix="/api")
 
@@ -6,14 +7,18 @@ apibp = Blueprint("apiBlueprint", __name__, url_prefix="/api")
 def Users():
     return ""
 
-@apibp.route("/add/<username>")
+@apibp.route("/add/<name>")
 def AddUser():
     return ""
 
-@apibp.route("/delete/<username>")
+@apibp.route("/delete/<name>")
 def DeleteUser():
     return ""
 
-@apibp.route("/update/<oldusername>/<newusername>")
+@apibp.route("/update/<oldname>/<newname>")
 def UpdateUser():
     return ""
+
+@apibp.route("/routes")
+def GetAllRoutes():
+    return AllRoutes
