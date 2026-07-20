@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-from Constantes import AllRoutes
+from Constants import AllRoutes
 
 allroutesbp = Blueprint("AllRoutesBlueprint", __name__, url_prefix="/routes")
 
