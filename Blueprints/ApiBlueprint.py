@@ -1,5 +1,5 @@
 from flask import Blueprint
-from Constantes import AllRoutes
+from Constants import AllRoutes
 
 apibp = Blueprint("apiBlueprint", __name__, url_prefix="/api")
 
