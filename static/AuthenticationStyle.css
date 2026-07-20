@@ -1,0 +1,36 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    height: 25vh;
+    width: 50vw;
+    background-color: rgb(229, 229, 229);
+
+    border-color: black;
+    border-style: double;
+    border-radius: 12px 12px 12px 0;
+    border-width: 12px;
+}
+
+input {
+    font-size: 150%;
+    margin-bottom: 3vh;
+    width: 30vw;
+    height: 4vh;
+}
