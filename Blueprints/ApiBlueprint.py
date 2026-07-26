@@ -1,5 +1,4 @@
-from flask import Blueprint
-from Constants import AllRoutes
+from flask import Blueprint, json
 
 apibp = Blueprint("apiBlueprint", __name__, url_prefix="/api")
 
@@ -8,17 +7,20 @@ def Users():
     return ""
 
 @apibp.route("/add/<name>")
-def AddUser():
-    return ""
+def AddUser(name):
+    return f"usuario {name} adicionado com sucesso"
 
 @apibp.route("/delete/<name>")
-def DeleteUser():
-    return ""
+def DeleteUser(name):
+    return f"usuario {name} deletado com sucesso"
 
 @apibp.route("/update/<oldname>/<newname>")
-def UpdateUser():
-    return ""
+def UpdateUser(oldname, newname):
+    return f"{oldname} foi substituido por {newname}"
 
 @apibp.route("/routes")
 def GetAllRoutes():
-    return AllRoutes
+    with open('AllRoutes.json', 'r') as file:
+        json_data = json.load(file)
+
+    return json_data
