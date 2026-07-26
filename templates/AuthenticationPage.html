@@ -7,14 +7,28 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='AuthenticationStyle.css')}}">
 </head>
 <body>
+    <button id="switchLogin">Login</button>
+    <button id="switchRegister">Register</button>
     <section>
-        <div class="main-div">
+        <div class="login main-div" id="loginDivID">
             <form action="post">
-                <input type="text" name="Username" id="usernameID"><br>
-                <input type="text" name="Password" id="passwordID">
-                <button type="submit"></button>
+                <H1>Login</H1>
+                Usename: <input type="text" name="Username" id="usernameID"><br>
+                Password: <input type="text" name="Password" id="passwordID">
+                <button type="submit">Finish</button>
+            </form>
+        </div>
+
+        <div class="register main-div" id="registerDivID" style="display: none;">
+            <form action="post">
+                <H1>Register</H1>
+                Usename: <input type="text" name="Username" id="usernameID"><br>
+                Password: <input type="text" name="Password" id="passwordID">
+                <button type="submit">Finish</button>
             </form>
         </div>
     </section>
+
+    <script src="{{ url_for('static', filename='javascript/SwitchAuth.js') }}"></script>
 </body>
 </html>
