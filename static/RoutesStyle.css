@@ -1,0 +1,53 @@
+.routesDiv {
+    width: fit-content;
+    height: fit-content;
+    border-color: black;
+    border-style: double;
+    border-radius: 8px;
+}
+
+.RouteClass {
+    width: 450px;
+    height: 150px;
+    border-style: double;
+    border-color: black;
+    border-radius: 16px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+fieldset {
+    border-style: none;
+}
+
+.GoodStatusCode {
+    background-color: rgb(50, 255, 50);
+    padding: 4px;
+}
+
+.BadStatusCode {
+    background-color: red;
+    padding: 4px;
+}
+
+.GoodStatusCode:hover {
+    border-radius: 16px;
+}
+
+.BadStatusCode:hover {
+    border-radius: 16px;
+}
+
+.BadStatusCode, .GoodStatusCode{
+    cursor: pointer;
+}
+
+.codeStyle {
+    background-color: rgba(99, 99, 99, 0.37);
+    padding: 4px;
+    border-radius: 16px;
+}
+
+.descriptionClass {
+    background-color: rgb(177, 176, 176);
+}
