@@ -2,6 +2,7 @@ from flask import Flask
 from dotenv import load_dotenv
 from Blueprints.ApiBlueprint import apibp
 from Blueprints.AuthenticationBlueprint import authbp
+from Blueprints.AllRoutesBlueprint import allroutesbp
 from extensions import db, lm
 import os
 
@@ -20,6 +21,7 @@ def load_user(user_id):
 
 app.register_blueprint(apibp)
 app.register_blueprint(authbp)
+app.register_blueprint(allroutesbp)
 from model import *
 
 if __name__ == "__main__":
