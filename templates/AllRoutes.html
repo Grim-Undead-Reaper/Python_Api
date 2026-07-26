@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='RoutesStyle.css')}}">
+    <title>All Routes</title>
+</head>
+<body>
+    <div class="routesDiv">
+        <fieldset>
+        <legend>Url</legend>
+        <p><code class="codeStyle">localhost:5000/api/routes</code> <b class="GoodStatusCode">200</b> | <b class="BadStatusCode">400</b></p>
+        </fieldset>
+        
+        <fieldset class="descriptionClass">
+        <legend>Description</legend>
+            <p>Show all routes and his description.</p>
+        </fieldset>
+    </div>
+</body>
+</html>
